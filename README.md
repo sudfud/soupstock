@@ -23,6 +23,6 @@ docker run -dp 3000:3000 -e AV_API_KEY=[Your API key] soupstock
 ### Available Endpoints
 #### GET /stock/{symbol}
 Retrieve the stock information of a given symbol [ex. MSFT]. 
-<br><br>Returns a JSON object with the following attributes if the given symbol is valid. Otherwise, returns a 400 status code (Bad Request).
+<br><br>Returns a JSON object with the following attributes if the given symbol is valid. Otherwise, returns a 400 status code.
 - prices: The closing prices of this symbol from the past 11 days.
 - average: The average closing price of this symbol over the past 11 days.
