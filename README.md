@@ -20,6 +20,11 @@ docker build -t soupstock .
 docker run -dp 3000:3000 -e AV_API_KEY=[Your API key] soupstock
 ```
 
+5. Try it out!
+```
+curl localhost:3000/stock/MSFT
+```
+
 ### Available Endpoints
 #### GET /stock/{symbol}
 Retrieve the stock information of a given symbol [ex. MSFT]. 
